@@ -1,0 +1,11 @@
+b=int(input())
+l=int(input())
+s=int(input())
+for k in range(b):
+    count=0
+    for i in range (l-k):
+        for j in range (s):
+            print("*", end="  ")
+            count=count+1
+        print()
+    print(count)
