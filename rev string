@@ -1,0 +1,14 @@
+class Solution(object):
+    def reverseString(self, s):
+        a=0
+        b=len(s)-1
+      
+        while (a<b):
+            s[a],s[b]=s[b],s[a]
+            a=a+1
+            b=b-1
+        
+        c=""
+        for i in s:
+            c=c+i
+        return c
