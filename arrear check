@@ -1,0 +1,7 @@
+S=["ANU","RAJ","RAM","SAM","ANI","BALU","ROSE","BEN","TOM","ROY"]
+M=[[22,33,98],[45,77,29],[89,87,12],[35,65,29],[55,44,33],[66,22,8],[88,22,13],[99,27,56],[77,38,56],[68,63,69]]
+A=[False,False,True,False,False,False,True,False,False,True]
+L=[sum(i)//3 for i in M]
+for i in range(len(S)):
+    if (L[i]>=40 and not A[i]):
+        print(S[i],":",L[i],"%","no arrear")
