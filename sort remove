@@ -1,0 +1,16 @@
+name=["a","b","c","d","e","f","g","h"]
+memo=[8,9,4,3,5,4,8,8]
+salary=[100,300,800,450,500,200,150,670]
+data=list(zip(name,memo,salary))
+remove=[i for i in data if i[2]>300]
+remain=[i for i in data if i[2]<300]
+remain.sort(key=lambda x:x[2],reverse=True)
+
+to_remove=[]
+for i in remain:
+    if(i[1]>1):
+        to_remove.append(i)
+    if(len(to_remove)==3):
+        break
+remove.append(to_remove)
+print(remove)
