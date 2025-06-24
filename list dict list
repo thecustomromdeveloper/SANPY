@@ -1,0 +1,12 @@
+students=[
+    {"name":"san","dept":"it","marks":[20,30,40]},
+    {"name":"balu","dept":"cse","marks":[12,33,90]},
+    {"name":"rahath","dept":"ece","marks":[78,50,80]},
+    {"name":"rocky","dept":"cse","marks":[90,60,10]}
+]
+for i in students:
+    tot=sum(i["marks"])
+    avg=tot//3
+    i["percentage"]=avg
+students.sort(key=lambda d:d["percentage"],reverse="True")
+print(students,end=" ")
